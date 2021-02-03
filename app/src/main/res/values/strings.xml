@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">dropblockwe</string>
+    <string name="game_score_string" />
+    <string name="game_over_textview_string" />
+    <string name="game_over_textview_string2" />
+    <string name="todo" />
+    <string name="welcome_string" />
+    <string name="newgame">newgame</string>
+    <string name="highscores">highscores</string>
+    <string name="settings">settings</string>
+    <string name="action_settings" />
+</resources>

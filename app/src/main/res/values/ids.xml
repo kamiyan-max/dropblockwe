@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="game_score_textview" type="id" />
+    <item name="game_over_textview" type="id" />
+    <item name="logoImageView" type="id" />
+    <item name="new_game_button" type="id" />
+    <item name="welcomeTextView" type="id" />
+    <item name="nameEditText" type="id" />
+    <item name="high_scores_button" type="id" />
+    <item name="highScoresTextView" type="id" />
+    <item name="set_properties_highscores_button" type="id" />
+    <item name="settings_button" type="id" />
+    <item name="listView_highscores" type="id" />
+    <item name="ID_CELL" type="id" />
+    <item name="NAME_CELL" type="id" />
+    <item name="SCORE_CELL" type="id" />
+    <item name="game_over_textview2" type="id" />
+    <item name="game_board" type="id" />
+</resources>

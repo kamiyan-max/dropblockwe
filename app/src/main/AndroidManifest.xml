@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blcck.dropblockwe">
+
+        <application
+            android:allowBackup="true"
+            android:icon="@drawable/tlogo"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+       
+            <activity
+                android:name="com.blcck.dropblockwe.MainActivity"
+                android:label="@string/app_name"
+                android:configChanges="orientation">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+
+            <activity
+                android:name="com.blcck.dropblockwe.SettingsActivity"
+                android:label="dropblockwe"
+                android:parentActivityName="com.blcck.dropblockwe.MainActivity"
+                android:configChanges="orientation">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.blcck.dropblockwe.MainActivity" />
+            </activity>
+
+            <activity
+                android:name="com.blcck.dropblockwe.SettingsHighscoresActivity"
+                android:label="dropblockwe"
+                android:parentActivityName="com.blcck.dropblockwe.HighScoresActivity"
+                android:configChanges="orientation">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.blcck.dropblockwe.MainActivity" />
+            </activity>
+            <activity
+                android:name="com.blcck.dropblockwe.HighScoresActivity"
+                android:label="@string/app_name"
+                android:parentActivityName="com.blcck.dropblockwe.MainActivity"
+                android:configChanges="orientation">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.blcck.dropblockwe.MainActivity" />
+            </activity>
+            <activity
+                android:name="com.blcck.dropblockwe.GameActivity"
+                android:label="@string/app_name"
+                android:parentActivityName="com.blcck.dropblockwe.MainActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="fullSensor">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.blcck.dropblockwe.MainActivity" />
+            </activity>
+
+            <provider
+                android:name="com.blcck.dropblockwe.HighScoresContentProvider"
+                android:exported="false"
+                android:permission="signature"
+                android:readPermission="true"
+                android:writePermission="true"
+                android:authorities="com.blcck.dropblockwe.contentprovider" />
+        </application>
+
+
+
+</manifest>
